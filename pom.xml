@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.bedtwL</groupId>
-    <artifactId>PureFFA-EffectAddonTemplate</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>PureFFA-ColoredBlock</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <properties>
