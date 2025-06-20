@@ -16,10 +16,12 @@ public class ColoredBlockMain implements EffectAddon {
     @Override
     public void onEnable() {
         new ColoredWool().registerBlockEffect();
+        new ColoredGlass().registerBlockEffect();
     }
 
     @Override
     public void onDisable() {
         new ColoredWool().unregisterBlockEffect();
+        new ColoredGlass().unregisterBlockEffect();
     }
 }

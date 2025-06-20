@@ -21,4 +21,8 @@ public class BlockUtils {
         state.setData(wool);
         state.update();
     }
+    public static void setGlassColor(Block block, DyeColor color) {
+        block.setType(Material.STAINED_GLASS);
+        block.setData(color.getWoolData());
+    }
 }
