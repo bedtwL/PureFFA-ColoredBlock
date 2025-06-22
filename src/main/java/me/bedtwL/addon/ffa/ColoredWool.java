@@ -1,11 +1,11 @@
 package me.bedtwL.addon.ffa;
 
-import me.bedtwL.ffa.api.BlockEffect;
+import me.bedtwL.ffa.api.effect.PureBlock;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
-public class ColoredWool implements BlockEffect {
+public class ColoredWool extends PureBlock {
     @Override
     public void onBlockPlace(Block block) {
         BlockUtils.setWoolColor(block,BlockUtils.getRandomDyeColor());
@@ -21,7 +21,7 @@ public class ColoredWool implements BlockEffect {
         return "colored-wool";
     }
     @Override
-    public Boolean useLang() {
+    public boolean useLang() {
         return true;
     }
     @Override

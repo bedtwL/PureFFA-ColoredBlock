@@ -1,11 +1,11 @@
 package me.bedtwL.addon.ffa;
 
-import me.bedtwL.ffa.api.BlockEffect;
+import me.bedtwL.ffa.api.effect.PureBlock;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
-public class StaticColorBlock implements BlockEffect {
+public class StaticColorBlock extends PureBlock {
     public final byte data;
     public final Material material;
 

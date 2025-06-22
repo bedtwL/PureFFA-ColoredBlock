@@ -51,6 +51,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>bedtwl-repo</id>
+            <url>https://mvn.bedtwl.com/maven-repo/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -60,11 +64,10 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>me.bedtwl</groupId>
+            <groupId>me.bedtwL</groupId>
             <artifactId>PureAPI</artifactId>
-            <version>1.0-Beta</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/PureAPI-1.0-Beta.jar</systemPath>
+            <version>1.0-HOTFIX</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

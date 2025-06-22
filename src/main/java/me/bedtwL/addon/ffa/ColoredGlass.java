@@ -1,11 +1,11 @@
 package me.bedtwL.addon.ffa;
 
-import me.bedtwL.ffa.api.BlockEffect;
+import me.bedtwL.ffa.api.effect.PureBlock;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
-public class ColoredGlass implements BlockEffect {
+public class ColoredGlass extends PureBlock {
     @Override
     public void onBlockPlace(Block block) {
         BlockUtils.setGlassColor(block,BlockUtils.getRandomDyeColor());
@@ -21,7 +21,7 @@ public class ColoredGlass implements BlockEffect {
         return "colored-glass";
     }
     @Override
-    public Boolean useLang() {
+    public boolean useLang() {
         return true;
     }
     @Override
