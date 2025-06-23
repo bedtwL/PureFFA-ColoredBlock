@@ -7,6 +7,8 @@ import java.util.UUID;
 
 public class ColoredBlockMain implements EffectAddon {
     @Override
+    public Integer getAPIVer() {return 1;}
+    @Override
     public String getName() {
         return "ColoredBlock";
     }
