@@ -22,12 +22,12 @@ public class ColoredBlockMain implements EffectAddon {
 
     @Override
     public void onEnable() {
-        new ColoredWool().registerBlockEffect();
-        new ColoredGlass().registerBlockEffect();
+        new ColoredWool().registerBlockEffect(this);
+        new ColoredGlass().registerBlockEffect(this);
         for (byte data = 0; data < 16; data++) {
             if (data!=0)
-                new StaticColorBlock(data, Material.WOOL).registerBlockEffect();
-            new StaticColorBlock(data,Material.STAINED_GLASS).registerBlockEffect();
+                new StaticColorBlock(data, Material.WOOL).registerBlockEffect(this);
+            new StaticColorBlock(data,Material.STAINED_GLASS).registerBlockEffect(this);
         }
     }
 
